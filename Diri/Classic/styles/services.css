@@ -1,0 +1,31 @@
+.s-list {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    padding: 0 16px;
+    width: 1000px;
+
+    @media (max-width: 625px) {
+        grid-template-columns: 1fr;
+    }
+
+    > div {
+        border-radius: 4px;
+        border-top: 4px solid #1565C0;
+        box-shadow: 0px 4px 8px #00000040;
+        padding: 32px;
+    }
+
+    & h2 {
+        align-items: center;
+        display: flex;
+        font-weight: normal;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+
+    & icon {
+        font-size: 32px;
+    }
+}
